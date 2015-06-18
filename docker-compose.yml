@@ -1,0 +1,4 @@
+clock:
+  image: clock:latest
+  ports:
+  - "4567:4567"
