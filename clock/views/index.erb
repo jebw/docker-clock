@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Clock test</title>
+		<style type="text/css" media="screen">
+		body {
+			margin: 0;
+			padding: 0;
+			font-size: 12em;
+			font-family: Arial;
+		}
+		
+		body > div {
+			margin: 0.6em 0;
+			padding: 0;
+			text-align: center;
+			color: #aaa;
+		}
+		
+		span {
+			color: #333;
+		}		
+		</style>
+	</head>
+	
+	<body>
+		<div>
+			<span><%= @hour %></span>
+			:
+			<span><%= @minute %></span>
+			:
+			<span><%= @second %></span>
+		</div>
+		
+	</body>
+</html>
