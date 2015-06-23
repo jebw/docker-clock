@@ -1,4 +1,8 @@
 clock:
   image: clock:latest
+webserver:
+  image: webserver:latest
   ports:
-  - "4567:4567"
+  - "80:80"
+  links:
+  - clock
