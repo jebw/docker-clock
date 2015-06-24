@@ -1,7 +1,7 @@
 clock:
-  image: clock:latest
+  image: jebw/clock:latest
 webserver:
-  image: webserver:latest
+  image: jebw/webserver:latest
   ports:
   - "80:80"
   links:
