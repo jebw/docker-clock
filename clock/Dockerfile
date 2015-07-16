@@ -6,8 +6,8 @@ RUN mkdir /app
 WORKDIR /app
 COPY . /app
 
-RUN bundle install
 
 EXPOSE 4567
+RUN bundle install
 
 CMD bundle exec ruby clock.rb
