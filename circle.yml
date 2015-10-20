@@ -9,6 +9,6 @@ dependencies:
   override:
     - docker -v
     - docker info
-    - 'cd clock && bundle check --path=vendor/bundle || bundle install --path=vendor/bundle --jobs=4 --retry=3'
-    - 'cd clock && docker build .'
+    - 'cd clock && docker build -t jebw/clock:latest .'
     - docker images
+    - 'docker run -p 4567:4567 -d jebw/clock:latest && curl -v http://127.0.0.1:4567/'
