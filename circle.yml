@@ -9,7 +9,7 @@ dependencies:
   override:
     - docker -v
     - docker info
-    - bundle check --path=vendor/bundle || bundle install --path=vendor/bundle --jobs=4 --retry=3
     - cd clock
+    - bundle check --path=vendor/bundle || bundle install --path=vendor/bundle --jobs=4 --retry=3
     - docker build
     - docker images
