@@ -9,8 +9,8 @@ dependencies:
   override:
     - docker -v
     - docker info
-    - 'cd clock && docker build -t jebw/clock:latest .'
-    - docker images
+    - sudo bundle install
+    - rake docker:build
     - docker run -p 4567:4567 -d jebw/clock:latest
     - which curl
     - 'curl -v http://127.0.0.1:4567/'
