@@ -5,7 +5,6 @@ FROM ruby:2.2
 RUN mkdir /app
 WORKDIR /app
 COPY . /app
-ADD ../README.md /app/
 
 EXPOSE 4567
 RUN bundle install
