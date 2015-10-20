@@ -2,4 +2,5 @@ source 'https://rubygems.org'
 
 gem 'sinatra'
 gem 'puma'
+# Trigger rebuild
 gem 'av', github:'ruby-av/av' # Added for debugging
